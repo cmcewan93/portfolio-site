@@ -1,5 +1,6 @@
 import React from 'react'
 import LandingImage from '../../shared/images/landing-background.svg'
+import './landing.scss'
 
 /**
  * This is the main content container for home page.
@@ -7,9 +8,11 @@ import LandingImage from '../../shared/images/landing-background.svg'
 
  const Landing = props => {
    return (
-     <div>
-       <img src={LandingImage}></img>
-     </div>
+     <section className='section-container bg-slate-grey' >
+       <div className='content-container' id='landing-section'>
+
+       </div>
+     </section>  
    )
  }
 
