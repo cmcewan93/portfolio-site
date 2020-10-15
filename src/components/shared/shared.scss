@@ -1,0 +1,46 @@
+@import './style-variables.scss';
+
+// Google Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+//Main containers
+
+// flex: 1 - shortform
+// flex-grow: 1;   Grow in same proportion as the window-size
+// flex-shrink : 1;   Shrink in same proportion as the window-size
+// flex-basis : 0;   If 2 divs are present, each div will take 50%.
+body {
+  margin: 0;
+}
+.site-container {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.section-container {
+  display: flex;
+  justify-content: center;
+}
+.content-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+.center-content-container {
+  max-width: 1400px;
+}
+
+//Background Colors
+.bg-white {
+  background: $off-white;
+}
+.bg-light-grey {
+  background: $light-grey;
+}
+.bg-slate-grey {
+  background: $slate-grey;
+}
+.bg-light-slate-grey {
+  background: $light-slate-grey;
+}

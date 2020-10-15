@@ -4,11 +4,11 @@ import Header from '../../components/shared/header/header'
 import Footer from '../../components/shared/footer/footer'
 import Routes from './routes'
 
-import './App.css';
+import '../shared/shared.scss';
 
 const App = props => {
   return (
-    <div className="App">
+    <div className="site-container">
       <Header/>
       <Routes/>
       <Footer/>

@@ -1,16 +1,17 @@
 import React from 'react'
 import HeaderIcon from '../../shared/images/CM-logo-white.svg'
+import './header.scss'
 
 const Header = () => {
   return (
-    <div className='header-container'>
+    <header className='header-container'>
       <div className='header-left'>
-        <img src={HeaderIcon} />
+        <img className='header-logo-icon' src={HeaderIcon} />
       </div>
       <div className='header-right'>
 
       </div>
-    </div>
+    </header>
   )
 }
 

@@ -1,0 +1,8 @@
+@import '../../shared/style-variables.scss';
+
+#landing-section {
+  background-image: url(../../shared/images/landing-background.svg);
+  background-size: cover;
+  height: 100vh;
+  max-height: 1024px;
+}

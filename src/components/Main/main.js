@@ -7,8 +7,8 @@ import Landing from './Landing/landing'
 
  const Main = props => {
    return (
-     <div>
-       <Landing />
+     <div className='main-content-container'>
+        <Landing />
      </div>
    )
  }

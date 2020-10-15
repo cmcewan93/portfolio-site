@@ -1,0 +1,8 @@
+@import '../../shared/style-variables.scss';
+
+.header-container {
+  position: fixed;
+  display: flex;
+  height: 100px;
+  z-index: 1;
+}
