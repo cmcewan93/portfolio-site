@@ -6,12 +6,12 @@ import Routes from './routes'
 
 import './App.css';
 
-function App() {
+const App = props => {
   return (
     <div className="App">
       <Header/>
-      <Routes />
-      <Footer />
+      <Routes/>
+      <Footer/>
     </div>
   );
 }
