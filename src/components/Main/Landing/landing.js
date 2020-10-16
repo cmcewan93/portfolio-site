@@ -17,6 +17,7 @@ import './landing.scss'
             <h2>Software Developer, Mentor & Creative Mind</h2>
           </div>
           <div className='arrow-container'>
+            <p className='text-container'>Scroll Down</p>
             <img src={DownArrow}/>
           </div>
        </div>

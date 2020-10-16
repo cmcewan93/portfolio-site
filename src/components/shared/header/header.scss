@@ -6,13 +6,19 @@
   height: 60px;
   width: 100%;
   z-index: 1;
-  background: rgba(38,38,38,0.5);
+}
+.headerTransparent {
+  background: rgba(38,38,38,0.5)
+}
+.headerSolid {
+  background: rgb(38,38,38);
 }
 
 #header-inner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .header-left, .header-right {

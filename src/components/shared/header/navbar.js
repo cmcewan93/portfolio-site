@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 
 const NavBar = () => {
+
   return (
     <nav className='navbar-container'>
       <Link to="/contact" className='navbar-link'>Contact</Link>
