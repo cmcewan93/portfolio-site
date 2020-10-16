@@ -1,12 +1,29 @@
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom';
 import NavBar from './navbar'
 import './header.scss'
 import HeaderIcon from '../../shared/images/CM-logo-white.svg'
 
 const Header = () => {
+
+  const [headerBackground, setHeaderBackground] = useState('headerTransparent')
+
+  const headerRef = useRef()
+  headerRef.current = headerBackground
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 310
+      show ? setHeaderBackground('headerSolid') : setHeaderBackground('headerTransparent')
+    }
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header className='header-container'>
+    <header className={`header-container ${headerBackground}`}>
       <div className='center-content-container' id="header-inner-container">
         <div className='header-left'>
           <Link to='/'>
