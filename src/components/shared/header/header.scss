@@ -3,6 +3,38 @@
 .header-container {
   position: fixed;
   display: flex;
-  height: 100px;
+  height: 60px;
+  width: 100%;
   z-index: 1;
+  background: rgba(38,38,38,0.5);
+}
+
+#header-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left, .header-right {
+  margin: 10px 15px;
+}
+
+.header-left {
+  .header-logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.navbar-container {
+  display: flex;
+  :last-child {
+    padding-right: unset;
+  }
+}
+.navbar-link {
+  padding-right: 20px;
+  color: $off-white;
+  text-decoration: none;
+  font-size: 16px;
+  @extend .emphasis-font
 }

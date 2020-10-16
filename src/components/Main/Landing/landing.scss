@@ -5,4 +5,30 @@
   background-size: cover;
   height: 100vh;
   max-height: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .name-container {
+    background: rgba(63,63,63,0.5);
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  h1 {
+    margin:0;
+    color: $off-white;
+    font-size: 72px;
+    letter-spacing: 5px;
+    @extend .emphasis-font;
+  }
+  h2 {
+    margin-top: 15px;
+    color: $light-grey;
+    font-size: 40px;
+    @extend .light-emphasis-font;
+  }
 }
