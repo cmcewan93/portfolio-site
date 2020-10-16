@@ -1,7 +1,7 @@
 @import './style-variables.scss';
 
 // Google Font Imports
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
 
 //Main containers
@@ -43,4 +43,13 @@ body {
 }
 .bg-light-slate-grey {
   background: $light-slate-grey;
+}
+
+//Media queries
+
+@media (min-width: 1400px) {
+  .center-content-container {
+    width: 1400px;
+    margin: auto;
+  }
 }

@@ -1,9 +1,14 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div className='navbar-container'>
-      
-    </div>
+    <nav className='navbar-container'>
+      <Link to="/contact" className='navbar-link'>Contact</Link>
+      <div className='navbar-link'>Projects</div>
+      <div className='navbar-link'>Blog</div>
+    </nav>
   )
 }
+
+export default NavBar
