@@ -1,5 +1,6 @@
 import React from 'react'
 import Landing from './Landing/landing'
+import Bio from './Bio/bio'
 import './main.scss'
 
 /**
@@ -10,6 +11,7 @@ import './main.scss'
    return (
      <div className='main-content-container'>
         <Landing />
+        <Bio />
      </div>
    )
  }
