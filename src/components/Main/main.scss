@@ -3,3 +3,11 @@
 .main-content-container {
   // padding-top: 62px;
 }
+
+
+.section-header {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: $grey-87;
+  @extend .medium-emphasis-font;
+}

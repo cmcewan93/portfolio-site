@@ -1,6 +1,7 @@
 import React from 'react'
 import Landing from './Landing/landing'
 import Bio from './Bio/bio'
+import Skills from './Skills/skills'
 import './main.scss'
 
 /**
@@ -12,6 +13,7 @@ import './main.scss'
      <div className='main-content-container'>
         <Landing />
         <Bio />
+        <Skills />
      </div>
    )
  }
