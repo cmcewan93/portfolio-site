@@ -6,7 +6,7 @@ const Bio = () => {
   return (
     <section className='section-container bg-off-white'>
       <div className='content-container' id='bio-section'>
-        <img className='bio-pic' src={LakePic}/>
+        {/* <img className='bio-pic' src={LakePic}/> */}
        <h1 className='bio-header'>Hi there, I'm Colin. Nice to meet you.</h1>
        <div className='divider-line'/>
        <p className='bio-description'>
