@@ -10,16 +10,15 @@ const Skills = () => {
     frontEnd: {
       title: 'Front End',
       logo: FrontEndLogo,
-      id: 'front-end',
       skills:
       [
         {name: 'React/Redux', icon:''},
         {name: 'JavaScript (ES6+)', icon: ''},
-        {name: 'Jquery', icon: ''},
-        {name: 'Ajax', icon: ''},
         {name: 'HTML', icon: ''},
         {name: 'CSS3', icon: ''},
         {name: 'SCSS', icon: ''},
+        {name: 'Jquery', icon: ''},
+        {name: 'Ajax', icon: ''},
         {name: 'Bootstrap', icon: ''},
         {name: 'Responsive Design', icon: ''}
       ]
@@ -27,27 +26,31 @@ const Skills = () => {
     backEnd: {
       title: 'Back End & Databases',
       logo: BackEndLogo,
-      id: 'back-end',
       skills:
       [
-        {name: 'Node/Express JS', icon: ''},
+        {name: 'Node JS', icon: ''},
+        {name: 'Express JS', icon: ''},
         {name: 'PostgreSQL', icon: ''},
         {name: 'MongoDB', icon: ''},
         {name: 'Microservices'},
         {name: 'REST APIs'},
+        {name: 'UML', icon: ''},
+        {name: 'OOP', icon: ''}
       ],
     },
     tools: {
       title: 'Dev Tools',
       logo: ToolsLogo,
-      id: 'd-tools',
       skills:
       [
         {name: 'Git', icon: ''},
-        {name: 'Unix/Linux Systems'},
-        {name: 'Invision', icon: ''},
+        {name: 'Unix/Linux Systems', icon: ''},
+        {name: 'Docker', icon: ''},
         {name: 'AWS', icon: ''},
+        {name: 'Github', icon: ''},
         {name: 'Jira', icon: ''},
+        {name: 'NPM', icon: ''},
+        {name: 'Invision', icon: ''},
         {name: 'Adobe Illustrator', icon: ''}
       ]
     }
@@ -69,7 +72,7 @@ const Skills = () => {
     return (
       <div className='grid-column'>
         <div className='grid-column-header-container'>
-          <img src={columnObj.logo} id={`${columnObj.id}`}></img>
+          <img src={columnObj.logo}></img>
           <div className='grid-column-header'>
             {columnObj.title}
           </div>

@@ -1,0 +1,54 @@
+@import '../../shared/style-variables.scss';
+
+#projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 30px;
+  .grid-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 320px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.grid-image {
+  height: 150px;
+  max-width: 250px;
+  // width: 390px;
+  // border-radius: 5px;
+}
+#tweet-logo {
+  height: 100px;
+  padding-top: 25px; // This is temp removing tweeter app soon
+}
+
+//Grid background Colors
+.bg-39G {
+  background: #393939;
+  // border: 1px solid #939393;
+  // border:1px solid #878787; //for hover
+}
+.bg-34G {
+  background: #343434;
+  // border: 2px solid #312f2f;
+}
+.bg-36G {
+  background: #363636;
+  // border: 1px solid #363636;
+}
+
