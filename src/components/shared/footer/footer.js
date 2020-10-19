@@ -20,7 +20,7 @@ const Footer = () => {
           <img className='social-icon' src={EmailIcon} />
         </div>
         <div className='info-container'>
-          <div className='author-container'> Designed and Created with <div>&#9829;</div> by Colin McEwan </div>
+          <div className='author-container'> Designed and created with <div>&#9829;</div> by Colin McEwan </div>
           <div className='copyright-container'>&#169; 2020  All rights reserved. </div>
         </div>
       </div>

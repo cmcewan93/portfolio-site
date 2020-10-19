@@ -15,8 +15,9 @@
 
   .grid-item {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 230px;
     width: 320px;
     margin-bottom: 10px;
@@ -24,6 +25,46 @@
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    .inner-grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .upper-grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      .project-title {
+        font-size: 20px;
+        color: $white;
+        @extend .emphasis-font;
+      }
+      .tech-stack {
+        font-size: 16px;
+        color: $grey-b3;
+        margin-top: 10px;
+        margin-bottom:10px;
+        @extend .medium-emphasis-font;
+      }
+    }
+    .project-button {
+      // color: #929292;
+      transition: all 0.3s ease-in-out;
+      color: $grey-b3;
+      border: 1px solid $grey-b3;
+      padding: 10px;
+      @extend .medium-emphasis-font;
+      &:hover {
+        background: $grey-b3;
+        color: $slate-grey;
+      }
+    }
+  }
+
+  .grid-item.hovered {
+    transition: background-color 0.5s ease-in-out;
+    background-color: $light-slate-grey;
   }
 }
 
