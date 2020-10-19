@@ -1,0 +1,42 @@
+@import '../../shared/style-variables.scss';
+
+.footer-container {
+  background: #ececec;
+  width: 100%;
+}
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.social-icon {
+  width: 40px;
+  padding-right: 40px;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  color: $grey-87;
+  font-size: 18px;
+  @extend .base-font;
+  p {
+    display: flex;
+  }
+}
+.copyright-container {
+  padding-top: 20px;
+}
+.author-container {
+  display: flex;
+  div {
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+    bottom: 1px;
+  }
+}
