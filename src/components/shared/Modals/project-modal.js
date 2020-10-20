@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import ProjectGallery from '../../Main/Projects/project-gallery'
 import Rodal from 'rodal'
 
 
@@ -19,6 +20,7 @@ const ProjectModal = ({hideModal, visible, project}) => {
         duration={600} 
         customStyles={styleObject}
        >
+        {project.images !== undefined ?<ProjectGallery images={project.images}/> : null}
         <div className='modal-text-container'>
           <div className='modal-header'>
             <h1>{project.name}</h1>

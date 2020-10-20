@@ -7,6 +7,14 @@ import NightOwlPic from '../../shared/images/NightOwl/nightowl-logo.svg'
 import CodePinPic from '../../shared/images/CodePin/codepin.jpg'
 import SchedulerPic from '../../shared/images/Scheduler/scheduler-logo.svg'
 import TweeterLogo from '../../shared/images/Tweeter/tweeter-logo.svg'
+
+import CodePinLogin from '../../shared/images/CodePin/codepin-login-pic.png'
+import CodePinWall from '../../shared/images/CodePin/codepin-resource-wall.png'
+
+import PlayLineLanding from '../../shared/images/Playline/playline-landing.png'
+import PlayLineCustom from '../../shared/images/Playline/playline-custom.gif'
+import PlayLineLobby from '../../shared/images/Playline/playline-pic.png'
+
 import './projects.scss'
 
 const Projects = () => {
@@ -31,46 +39,99 @@ const Projects = () => {
       description: 
       `A portfolio site showcasing projects that I have created or collborated on and providing insight into who I am. Powered by ReactJS and styled using SCSS, the site was
       designed/developed without any CSS frameworks as a design exercise. It is entirely responsive and Cross-browser compatible to ensure accessibillity to a large variety of users.
-      The majority of icons and images were created using Adobe Illustrator and Photoshop`,
+      The majority of icons and images were created using Adobe Illustrator and Photoshop.`,
       url: 'https://github.com/cmcewan93/portfolio-site',
       stack: 'ReactJS',
       logo: PorfolioPic,
-      images: []
+      images: [
+        {
+          original: PlayLineLanding,
+          thumbnail: PlayLineLanding
+        },
+        {
+          original: PlayLineCustom,
+          thumbnail: PlayLineCustom
+        },
+        {
+          original: PlayLineLobby,
+          thumbnail: PlayLineLobby
+        }
+      ]
     },
     {
       id: 2,
       name: 'CodePin',
-      stack: 'ReactJS, ExpressJS & PostgreSQL',
+      subtext: 'Educational resource management system',
+      stack: 'Jquery, ExpressJS & PostgreSQL',
+      description: `Allows students to save learning resources such as tutorials, blogs and videos in a centralized location that is publicly available to any user. Inspired by 
+      Pinterest, users take the urls of online educational resources and save them to their wall which is categorized by a variety of tags. All this data is processed and persisted 
+      in to a database by the back end Express server.`,
+      url: 'https://github.com/cmcewan93/Codepin',
       logo: CodePinPic,
-      images: []
+      images: [
+        {
+          original: CodePinLogin,
+          thumbnail: CodePinLogin
+        },
+        {
+          original: CodePinWall,
+          thumbnail: CodePinWall
+        }
+      ]
     },
     {
       id: 3,
       name: 'PlayLine Features',
+      subtext: '',
+      description: ``,
       stack: 'ReactJS, PHP/Symfony & PostgreSQL',
+      url: 'https://playline.com/',
       logo: PlaylinePic,
-      images: []
+      images: [
+        {
+          original: PlayLineLanding,
+          thumbnail: PlayLineLanding
+        },
+        {
+          original: PlayLineCustom,
+          thumbnail: PlayLineCustom
+        },
+        {
+          original: PlayLineLobby,
+          thumbnail: PlayLineLobby
+        }
+      ]
     },
     {
       id: 4,
       name: 'Interview Scheduler',
+      subtext: '',
+      description: ``,
       stack: 'ReactJS, ExpressJS & PostgreSQL',
+      url: 'https://github.com/cmcewan93/InterviewScheduler',
       logo: SchedulerPic,
-      images: []
+      // images: []
     },
     {
       id: 5,
       name: 'Night Owl',
+      subtext: 'Nightlife Application',
+      description: `Provides real time, live updates on the current status of bars and nightclubs within a user's area. Performs data analytics from a pool of users to provide 
+      accurate live descriptions of different venues.`,
       stack: 'ReactJS, ExpressJS & PostgreSQL',
+      url: 'https://github.com/cmcewan93/NightOwl-FrontEnd',
       logo: NightOwlPic,
-      images: []
+      // images: []
     },
     {
       id: 6,
       name: 'Tweeter',
+      subtext: 'Single-page Twitter clone',
+      description: '',
       stack: 'JQuery & Javascript',
+      url: 'https://github.com/cmcewan93/tweeter',
       logo: TweeterLogo,
-      images: []
+      // images: []
     }
   ]
 

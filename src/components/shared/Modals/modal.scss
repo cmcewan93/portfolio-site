@@ -1,6 +1,46 @@
+@import '../style-variables.scss';
+
 .project-modal {
   .rodal-dialog {
-    height: 750px;
-    width: 700px;
+    background: $white;
   }
+  .modal-text-container {
+    .modal-header {
+      h1 {
+        font-size: 22pt;
+        color: #444;
+      }
+      h2 {
+        color: #c0c0c0;;
+        font-size: 11pt;
+      }
+      @extend .emphasis-font
+    }
+    .project-description-container {
+      p {
+        line-height: 1.5;
+      }
+      @extend .medium-emphasis-font;
+    }
+  }
+  .divider-line {
+    width: 100%;
+  }
+  .project-button {
+    // color: #929292;
+    transition: all 0.3s ease-in-out;
+    background: #444;
+    color: $white;
+    border: 1px solid #444;
+    // border: 1px solid $grey-b3;
+    padding: 10px;
+    text-decoration: none;
+    @extend .medium-emphasis-font;
+    &:hover {
+      background: $white;
+      color: #444;
+      border: 1px solid #444;
+    }
+  }
+  
 }
