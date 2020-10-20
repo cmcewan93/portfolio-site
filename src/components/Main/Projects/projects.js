@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import ProjectModal from '../../shared/Modals/Modal'
+import ProjectModal from '../../shared/Modals/project-modal'
 
 import PlaylinePic from '../../shared/images/Playline/playline-logo1.svg'
 import PorfolioPic from '../../shared/images/CM-logo-white.svg'
-import NightOwlPic from '../../shared/images/nightowl-logo.svg'
-import CodePinPic from '../../shared/images/codepin.jpg'
-import SchedulerPic from '../../shared/images/scheduler-logo.svg'
-import TweeterLogo from '../../shared/images/tweeter-logo.svg'
+import NightOwlPic from '../../shared/images/NightOwl/nightowl-logo.svg'
+import CodePinPic from '../../shared/images/CodePin/codepin.jpg'
+import SchedulerPic from '../../shared/images/Scheduler/scheduler-logo.svg'
+import TweeterLogo from '../../shared/images/Tweeter/tweeter-logo.svg'
 import './projects.scss'
 
 const Projects = () => {
@@ -27,6 +27,12 @@ const Projects = () => {
     {
       id: 1,
       name: 'Portfolio Site',
+      subtext: 'Colin McEwan\'\s personal portfolio site.',
+      description: 
+      `A portfolio site showcasing projects that I have created or collborated on and providing insight into who I am. Powered by ReactJS and styled using SCSS, the site was
+      designed/developed without any CSS frameworks as a design exercise. It is entirely responsive and Cross-browser compatible to ensure accessibillity to a large variety of users.
+      The majority of icons and images were created using Adobe Illustrator and Photoshop`,
+      url: 'https://github.com/cmcewan93/portfolio-site',
       stack: 'ReactJS',
       logo: PorfolioPic,
       images: []
