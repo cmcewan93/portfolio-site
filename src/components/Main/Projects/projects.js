@@ -8,8 +8,12 @@ import CodePinPic from '../../shared/images/CodePin/codepin.jpg'
 import SchedulerPic from '../../shared/images/Scheduler/scheduler-logo.svg'
 import TweeterLogo from '../../shared/images/Tweeter/tweeter-logo.svg'
 
-import CodePinLogin from '../../shared/images/CodePin/codepin-login-pic.png'
+import CodePinRegister from '../../shared/images/CodePin/register-pic.png'
 import CodePinWall from '../../shared/images/CodePin/codepin-resource-wall.png'
+import CodePinLogin from '../../shared/images/CodePin/login.png'
+import CodePinCreate from '../../shared/images/CodePin/create.png'
+import CodePinDemo from '../../shared/images/CodePin/demo.gif'
+import CodePinHome from '../../shared/images/CodePin/home.png'
 
 import PlayLineLanding from '../../shared/images/Playline/playline-landing.png'
 import PlayLineEntry from '../../shared/images/Playline/contest-entry.png'
@@ -18,6 +22,20 @@ import PlayLineLobby from '../../shared/images/Playline/playline-lobby.svg'
 import PlayLineLive from '../../shared/images/Playline/playline-live.png'
 
 import SchedulerAdd from '../../shared/images/Scheduler/add-interview.png'
+import SchedulerDelete from '../../shared/images/Scheduler/delete-interview.png'
+import SchedulerGif from '../../shared/images/Scheduler/scheduler.gif'
+
+import NightOwlMapview from '../../shared/images/NightOwl/nightowl-map.png'
+import NightOwlUberview from '../../shared/images/NightOwl/map-uberview.png'
+import NightOwlBarview from '../../shared/images/NightOwl/nightowl-barview.png'
+import NightOwlCheckIn from '../../shared/images/NightOwl/checkin.png'
+import NightOwlLogin from '../../shared/images/NightOwl/login.png'
+import NightOwlDemo from '../../shared/images/NightOwl/nightowl-demo.gif'
+
+import TweeterMsg from '../../shared/images/Tweeter/tweet-msg.png'
+import TweeterMain from '../../shared/images/Tweeter/main.png'
+import TweeterDemo from '../../shared/images/Tweeter/demo.gif'
+
 
 import './projects.scss'
 
@@ -86,9 +104,21 @@ const Projects = () => {
           thumbnail: CodePinLogin
         },
         {
+          original: CodePinRegister,
+          thumbnail: CodePinRegister
+        },
+        {
+          original: CodePinDemo,
+          thumbnail: CodePinDemo
+        },
+        {
+          original: CodePinCreate,
+          thumbnail: CodePinCreate
+        },
+        {
           original: CodePinWall,
           thumbnail: CodePinWall
-        }
+        },
       ]
     },
     {
@@ -105,12 +135,20 @@ const Projects = () => {
           thumbnail: PlayLineLanding
         },
         {
+          original: PlayLineLobby,
+          thumbnail: PlayLineLobby
+        },
+        {
           original: PlayLineCustom,
           thumbnail: PlayLineCustom
         },
         {
-          original: PlayLineLobby,
-          thumbnail: PlayLineLobby
+          original: PlayLineLive,
+          thumbnail: PlayLineLive
+        },
+        {
+          original: PlayLineEntry,
+          thumbnail: PlayLineEntry
         }
       ]
     },
@@ -127,6 +165,14 @@ const Projects = () => {
         {
           original: SchedulerAdd,
           thumbnail: SchedulerAdd
+        },
+        {
+          original: SchedulerDelete,
+          thumbnail: SchedulerDelete
+        },
+        {
+          original: SchedulerGif,
+          thumbnail: SchedulerGif
         }
       ]
     },
@@ -135,11 +181,37 @@ const Projects = () => {
       name: 'Night Owl',
       subtext: 'Nightlife Application',
       description: `Provides real time, live updates on the current status of bars and nightclubs within a user's area. Performs data analytics from a pool of users to provide 
-      accurate live descriptions of different venues.`,
+      accurate live descriptions of different venues. User Registration and authenication using bcrypt to ensure user security. 
+      Google Maps API and Uber API are integrated to provide directions/transport to a selected location. `,
       stack: 'ReactJS, ExpressJS & PostgreSQL',
       url: 'https://github.com/cmcewan93/NightOwl-FrontEnd',
       logo: NightOwlPic,
-      // images: []
+      images: [
+        {
+          original: NightOwlLogin,
+          thumbnail: NightOwlLogin
+        },
+        {
+          original: NightOwlDemo,
+          thumbnil: NightOwlDemo
+        },
+        {
+          original: NightOwlMapview,
+          thumbnail: NightOwlMapview
+        },
+        {
+          original: NightOwlBarview,
+          thumbnail: NightOwlBarview
+        },
+        {
+          original: NightOwlCheckIn,
+          thumbnail: NightOwlCheckIn
+        },
+        {
+          original: NightOwlUberview,
+          thumbnail: NightOwlUberview
+        },
+      ]
     },
     {
       id: 6,
@@ -149,7 +221,20 @@ const Projects = () => {
       stack: 'JQuery & Javascript',
       url: 'https://github.com/cmcewan93/tweeter',
       logo: TweeterLogo,
-      // images: []
+      images: [
+        {
+          original: TweeterMain,
+          thumbnail: TweeterMain
+        },
+        // {
+        //   original: TweeterMsg,
+        //   thumbnail: TweeterMsg
+        // },
+        {
+          original: TweeterDemo,
+          thumbnail: TweeterDemo
+        }
+      ]
     }
   ]
 
