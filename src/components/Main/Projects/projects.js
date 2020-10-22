@@ -226,10 +226,6 @@ const Projects = () => {
           original: TweeterMain,
           thumbnail: TweeterMain
         },
-        // {
-        //   original: TweeterMsg,
-        //   thumbnail: TweeterMsg
-        // },
         {
           original: TweeterDemo,
           thumbnail: TweeterDemo
