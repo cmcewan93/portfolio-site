@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Header from '../../components/shared/header/header'
-import Footer from '../../components/shared/footer/footer'
+import Header from '../../components/shared/Header/header'
+import Footer from '../../components/shared/Footer/footer'
 import Routes from './routes'
 
 import '../shared/shared.scss';

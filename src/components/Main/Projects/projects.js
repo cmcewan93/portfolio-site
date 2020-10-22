@@ -12,8 +12,12 @@ import CodePinLogin from '../../shared/images/CodePin/codepin-login-pic.png'
 import CodePinWall from '../../shared/images/CodePin/codepin-resource-wall.png'
 
 import PlayLineLanding from '../../shared/images/Playline/playline-landing.png'
-import PlayLineCustom from '../../shared/images/Playline/playline-custom.gif'
-import PlayLineLobby from '../../shared/images/Playline/playline-pic.png'
+import PlayLineEntry from '../../shared/images/Playline/contest-entry.png'
+import PlayLineCustom from '../../shared/images/Playline/custom.gif'
+import PlayLineLobby from '../../shared/images/Playline/playline-lobby.svg'
+import PlayLineLive from '../../shared/images/Playline/playline-live.png'
+
+import SchedulerAdd from '../../shared/images/Scheduler/add-interview.png'
 
 import './projects.scss'
 
@@ -49,12 +53,20 @@ const Projects = () => {
           thumbnail: PlayLineLanding
         },
         {
+          original: PlayLineLobby,
+          thumbnail: PlayLineLobby
+        },
+        {
           original: PlayLineCustom,
           thumbnail: PlayLineCustom
         },
         {
-          original: PlayLineLobby,
-          thumbnail: PlayLineLobby
+          original: PlayLineLive,
+          thumbnail: PlayLineLive
+        },
+        {
+          original: PlayLineEntry,
+          thumbnail: PlayLineEntry
         }
       ]
     },
@@ -105,12 +117,18 @@ const Projects = () => {
     {
       id: 4,
       name: 'Interview Scheduler',
-      subtext: '',
-      description: ``,
+      subtext: 'Mock Interview Scheduler',
+      description: `Interview Scheduler is a SPA that allows users to book mock interviews with interviewers available for the day. Built using a TDD apporach, the testing libraries used
+      were Jest/Cypress. Utilizes axios to create asynchronous HTTP requests to the back end server creating a fluent, instantaneous user experience.`,
       stack: 'ReactJS, ExpressJS & PostgreSQL',
       url: 'https://github.com/cmcewan93/InterviewScheduler',
       logo: SchedulerPic,
-      // images: []
+      images: [
+        {
+          original: SchedulerAdd,
+          thumbnail: SchedulerAdd
+        }
+      ]
     },
     {
       id: 5,
@@ -192,7 +210,7 @@ const Projects = () => {
   }
 
   return (
-    <section className='section-container bg-white'>
+    <section className='section-container bg-light-slate-grey'>
       <div className='content-container bg-light-slate-grey' id='projects-section'>
         <h1 className='section-header'>Things I've Worked On</h1>
         {

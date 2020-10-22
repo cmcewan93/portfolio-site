@@ -8,8 +8,8 @@ import './modal.scss'
 
 const ProjectModal = ({hideModal, visible, project}) => {
   const styleObject = {
-    width: '700px',
-    height: '750px'
+    width: '800px',
+    height: '675px'
   }
   return ( 
       <Rodal
@@ -32,9 +32,9 @@ const ProjectModal = ({hideModal, visible, project}) => {
               {project.description}
             </p>
           </div>
-          <div className='modal-footer'>
-            <a className='project-button' href={project.url}>VIEW PROJECT</a>
-          </div>
+        </div>
+        <div className='modal-footer'>
+          <a className='project-button' href={project.url}>VIEW PROJECT</a>
         </div>
       </Rodal>
   )
