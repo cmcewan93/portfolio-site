@@ -14,7 +14,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const show = window.scrollY > 5
-      show ? setHeaderBackground('headerSolid') : setHeaderBackground('headerTransparent')
+      show ? setHeaderBackground('header-solid') : setHeaderBackground('header-transparent')
     }
     document.addEventListener('scroll', handleScroll)
     return () => {
