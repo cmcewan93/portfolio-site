@@ -17,7 +17,9 @@ const Footer = () => {
           <a href='https://www.linkedin.com/in/colin-mcewan-a8848453'>
             <img className='social-icon' src={LinkedinIcon} />
           </a>
-          <img className='social-icon' src={EmailIcon} />
+          <a href="mailto:cmcewan93@gmail.com">
+            <img className='social-icon' src={EmailIcon} />
+          </a>
         </div>
         <div className='info-container'>
           <div className='author-container'> Designed and created with <div>&#9829;</div> by Colin McEwan </div>

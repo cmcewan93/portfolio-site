@@ -1,0 +1,62 @@
+@import '../shared/style-variables.scss';
+
+
+#contact-section {
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .contact-container {
+    margin-top: 100px;
+  }
+  .contact-message {
+    font-size: 32px;
+    text-align: center;
+    color: $slate-grey;
+    margin-bottom: 50px;
+    @extend .medium-emphasis-font;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    .form-header {
+      font-size: 20px;
+      color: $grey-72;
+      padding-bottom: 10px;
+      @extend .medium-emphasis-font;
+    }
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      input {
+        padding-left: 10px;
+        width: 308px;
+        height: 56px;
+        @extend .medium-emphasis-font;
+      }
+    }
+    .form-top-container {
+      display: flex;
+      .form-section {
+        &:last-child {
+          padding-left: 20px;
+        }
+      }     
+    }
+    .form-bottom-container {
+      padding-top: 20px;
+      textarea {
+        padding:10px;
+        resize: vertical;
+        min-height: 200px;
+        @extend .medium-emphasis-font;
+      }
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  }
+}
