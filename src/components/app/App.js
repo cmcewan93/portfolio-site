@@ -5,6 +5,7 @@ import Footer from '../../components/shared/Footer/footer'
 import Routes from './routes'
 
 import '../shared/shared.scss';
+import 'animate.css'
 
 const App = props => {
   return (

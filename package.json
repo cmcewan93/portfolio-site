@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@hookform/error-message": "0.0.4",
+    "animate.css": "^4.1.1",
     "cra-template": "1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

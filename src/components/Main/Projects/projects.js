@@ -277,11 +277,11 @@ const Projects = () => {
         {
           hoverId == item.id ?
           <div className='inner-grid-item'>
-            <div className='upper-grid-item'>
+            <div className='upper-grid-item animate__animated animate__fadeInDown'>
               <div className='project-title'>{item.name}</div>
               <div className='tech-stack'>{item.stack}</div>
             </div>
-            <div className='project-button' onClick={() => selectProject(item)}>LEARN MORE</div>
+            <div className='project-button animate__animated animate__fadeInUp' onClick={() => selectProject(item)}>LEARN MORE</div>
           </div>
           :
           <img className='grid-image' src={item.logo}/>
@@ -293,7 +293,7 @@ const Projects = () => {
   return (
     <section className='section-container bg-light-slate-grey'>
       <div className='content-container bg-light-slate-grey' id='projects-section'>
-        <h1 className='section-header'>Things I've Worked On</h1>
+        <h1 className='section-header animate__animated animate__bounce'>Things I've Worked On</h1>
         {
           renderGrid(projects)
         }

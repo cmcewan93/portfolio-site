@@ -7,17 +7,14 @@ import HeaderIcon from '../../shared/images/CM-logo-white.svg'
 
 const MainHeader = () => {
 
-  let history = useHistory()
-  let isContactPage = history.location.pathname == "/contact" ? true : false;
-  
-  const [headerBackground, setHeaderBackground] = useState(isContactPage ? 'header-solid' : 'headerTransparent')
+  const [headerBackground, setHeaderBackground] = useState('headerTransparent')
   const headerRef = useRef()
   headerRef.current = headerBackground
 
   useEffect(() => {
     const handleScroll = () => {
       const show = window.scrollY > 5
-      show || isContactPage ? setHeaderBackground('header-solid') : setHeaderBackground('header-transparent')
+      show ? setHeaderBackground('header-solid') : setHeaderBackground('header-transparent')
     }
     document.addEventListener('scroll', handleScroll)
     return () => {
