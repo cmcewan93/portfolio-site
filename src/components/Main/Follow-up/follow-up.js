@@ -19,10 +19,8 @@ const FollowUp = () => {
             <Link 
             className='message-button-container'
             to='/contact'
-            onMouseEnter={() => {setMsgButtonHovered(true)}}
-            onMouseLeave={() => {setMsgButtonHovered(false)}}
              >
-              <div className='message-button'>
+              <div className='message-button' onMouseEnter={() => {setMsgButtonHovered(true)}} onMouseLeave={() => {setMsgButtonHovered(false)}}>
                 <div> Message me</div>
                 <img className='message-icon' src={msgButtonHovered ? MessageIconWhite : MessageIcon} />
               </div>
