@@ -6,6 +6,7 @@ import Routes from './routes'
 
 import '../shared/shared.scss';
 import 'animate.css'
+import "aos/dist/aos.css"
 
 const App = props => {
   return (

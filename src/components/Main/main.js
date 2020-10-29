@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import Landing from './Landing/landing'
 import Bio from './Bio/bio'
 import Skills from './Skills/skills'
@@ -11,10 +11,13 @@ import './main.scss'
  */
 
  const Main = () => {
+
+  const bioRef = useRef();
+
    return (
     <div className='main-content-container'>
-      <Landing />
-      <Bio />
+      <Landing bioRef={bioRef}/>
+      <Bio bioRef={bioRef}/>
       <Skills />
       <Projects />
       <FollowUp />

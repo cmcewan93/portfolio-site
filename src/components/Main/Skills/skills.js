@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from "aos"
 import FrontEndLogo from '../../shared/images/fEndlogo.svg'
 import ToolsLogo from '../../shared/images/toolsLogo.svg'
 import BackEndLogo from '../../shared/images/backEndLogo.svg'
 import './skills.scss'
 
 const Skills = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
   
   const skillsObject = {
     frontEnd: {
@@ -70,7 +75,7 @@ const Skills = () => {
   }
   const renderGridColumn = (columnObj) => {
     return (
-      <div className='grid-column'>
+      <div className='grid-column' data-aos="zoom-in-down">
         <div className='grid-column-header-container'>
           <img src={columnObj.logo}></img>
           <div className='grid-column-header'>
@@ -98,6 +103,7 @@ const Skills = () => {
     <section className='section-container bg-white'>
       <div className='content-container' id='skills-section'>
         <h1 className='section-header'>Skills</h1>
+        <div className='divider-line' data-aos="fade-left"/>
         {renderGrid(skillsObject)}
       </div>
     </section>
