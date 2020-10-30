@@ -1,42 +1,50 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
 import { ErrorMessage } from '@hookform/error-message';
+import emailjs, { init } from 'emailjs-com';
+
+import ConfirmationModal from '../shared/Modals/confirmation-modal'
+
 import './contact.scss'
 
-const Contact = props => {
+const Contact = ({history}) => {
   const { pathname } = useLocation();
   const { register, handleSubmit, setError, errors } = useForm();
-  const onSubmit = data => console.log(data);
+  const {REACT_APP_EMAIL_SERVICE_ID: serviceId, REACT_APP_EMAIL_TEMPLATE_ID: templateId, REACT_APP_EMAIL_USER_ID : userId} = process.env
   const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  console.log(errors)
+  init(userId);
 
-  // const handleInputChange = (event) => {
-    
-  //   const target = event.target;
-  //   const eventName = target.name;
-  //   const newFormState = {
-  //     name: '',
-  //     email: '',
-  //     message: '',
-  //   }
-
-  //   switch(eventName) {
-  //     case 'name':
-  //       newFormState.name = target.value;
-  //       break;
-  //     case 'email':
-  //       newFormState.email = target.value;
-  //       break;
-  //     case 'message':
-  //       newFormState.message = target.value;
-  //       break;
-  //   }
-  // }
+  const [visible, setVisible] = useState(false)
+  const [isSuccessfulSubmit, setIsSuccessfulSubmit] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  const showModal = () => {setVisible(true)}
+  const hideModal = () => {
+    setVisible(false)
+    history.push("/")
+  }
+  
+  const showConfirmationMessage = (isSuccess) => {
+    setIsSuccessfulSubmit(isSuccess);
+    showModal()
+  }
+  const onSubmit = data => {
+    let variables = {message: data.message, to_name: 'Colin', from_name: data.name, reply_to: data.email};
+    emailjs.send(serviceId, templateId, variables)
+      .then(res => {
+        showConfirmationMessage(true)
+        console.log('Email successfully sent!')
+      })
+      .catch(err => {
+        showConfirmationMessage(false)
+        console.error('Failed to send.', err)
+      })
+  }
+
 
   return (
     <section className='section-container bg-white'>
@@ -120,6 +128,7 @@ const Contact = props => {
           </form>
         </div>
       </div>
+      <ConfirmationModal visible={visible} hideModal={hideModal} isSuccess={isSuccessfulSubmit} />
     </section>
   )
 }

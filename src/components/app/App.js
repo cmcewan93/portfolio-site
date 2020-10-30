@@ -1,12 +1,11 @@
 import React from 'react';
-
-import Header from '../shared/Header/mainHeader'
-import Footer from '../../components/shared/Footer/footer'
 import Routes from './routes'
 
 import '../shared/shared.scss';
 import 'animate.css'
 import "aos/dist/aos.css"
+
+require('dotenv').config()
 
 const App = props => {
   return (
