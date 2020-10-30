@@ -31,7 +31,7 @@ const MainHeader = () => {
           </Link>
         </div>
         <div className='header-right'>
-          <NavBar />
+          <NavBar showSectionAnchors={true}/>
         </div>
       </div>
     </header>

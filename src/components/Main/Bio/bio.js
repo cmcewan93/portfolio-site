@@ -13,12 +13,12 @@ const Bio = ({bioRef}) => {
     <section className='section-container bg-off-white' ref={bioRef}>
       <div className='content-container' id='bio-section'>
         <div className='bio-image-container'>
-          <img className='bio-pic' src={LakePic} data-aos="fade-right"/>
+          <img className='bio-pic' src={LakePic} data-aos-delay="100" data-aos="fade-right" />
         </div>
         <div className='bio-text-container'>
-          <h1 className='bio-header' data-aos="fade-left">ABOUT</h1>
-          <div className='divider-line' data-aos="fade-left"/>
-          <div className='text-container' data-aos="fade-left">
+          <h1 className='bio-header' >ABOUT</h1>
+          <div className='divider-line' />
+          <div className='text-container' data-aos="fade-right">
             <p className='bio-description' >
               I'm a Toronto-based software developer with a passion for creating responsive, scalable and user-friendly applications. 
               After graduating from Seneca College in 2019 with a Diploma in Computer Programming, I went on to complete a 12-week, 
@@ -35,7 +35,7 @@ const Bio = ({bioRef}) => {
               the software development field, or would like to discuss an opportunity, feel free to reach out to me
             </p>
           </div>
-          <div className='divider-line' data-aos="fade-left"/>
+          <div className='divider-line'/>
         </div>
       </div>
     </section>

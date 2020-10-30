@@ -15,7 +15,7 @@ const DefaultHeader = () => {
           </Link>
         </div>
         <div className='header-right'>
-          <NavBar />
+          <NavBar showSectionAnchors={false} />
         </div>
       </div>
     </header>

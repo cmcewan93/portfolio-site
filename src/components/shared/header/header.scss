@@ -37,10 +37,18 @@
     padding-right: unset;
   }
 }
-.navbar-link {
+.navbar-link-container {
   padding-right: 20px;
   color: $off-white;
-  text-decoration: none;
   font-size: 16px;
+  .navbar-link {
+    color: $off-white;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid $off-white;
+    }
+  }
   @extend .medium-emphasis-font
 }

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ProjectModal from '../../shared/Modals/project-modal'
+import Aos from "aos"
 
 import PlaylinePic from '../../shared/images/Playline/playline-logo1.svg'
 import PorfolioPic from '../../shared/images/CM-logo-white.svg'
@@ -39,7 +40,7 @@ import TweeterDemo from '../../shared/images/Tweeter/demo.gif'
 
 import './projects.scss'
 
-const Projects = () => {
+const Projects = ({projectsRef}) => {
 
   const [visible, setVisible] = useState(false)
   const [selectedProject, setSelectedProject] = useState({})
@@ -47,6 +48,10 @@ const Projects = () => {
 
   const showModal = () => {setVisible(true)}
   const hideModal = () => {setVisible(false)}
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
 
   const selectProject = (project) => {
     setSelectedProject(project)
@@ -235,7 +240,6 @@ const Projects = () => {
   ]
 
   const renderGrid = (projects) => {
-
     // This func splits the array into sub arrays of a specified length, creates the columns for the grid
     function split(array, n) {
       let [...arr]  = array;
@@ -260,7 +264,7 @@ const Projects = () => {
 
   const renderColumn = (column, columnNum) => {
     return (
-      <div className='grid-column-projects'>
+      <div className='grid-column-projects'  data-aos="flip-left" data-aos-delay={`${columnNum * 200}`} >
         {
           column.map(row => {
             return renderGridItem(row, columnNum)
@@ -273,7 +277,11 @@ const Projects = () => {
   const renderGridItem = (item, columnNum) => {
     let columnColorClassArray = ['bg-34G', 'bg-39G', 'bg-36G'] // each color represents bg color for grid items in a column
     return (
-      <div className={`grid-item ${columnColorClassArray[columnNum]} ${hoverId == item.id ? 'hovered' : ''}`} onMouseEnter={() => setHoverId(item.id)} onMouseLeave={() => setHoverId(null)}>
+      <div 
+      className={`grid-item ${columnColorClassArray[columnNum]} ${hoverId == item.id ? 'hovered' : ''} animate__animated animate__fadeInUp`} 
+      onMouseEnter={() => setHoverId(item.id)} 
+      onMouseLeave={() => setHoverId(null)}
+      >
         {
           hoverId == item.id ?
           <div className='inner-grid-item'>
@@ -293,7 +301,7 @@ const Projects = () => {
   return (
     <section className='section-container bg-light-slate-grey'>
       <div className='content-container bg-light-slate-grey' id='projects-section'>
-        <h1 className='section-header animate__animated animate__bounce'>Things I've Worked On</h1>
+        <h1 className='section-header'>Things I've Worked On</h1>
         {
           renderGrid(projects)
         }

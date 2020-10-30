@@ -1,24 +1,9 @@
 import React from 'react'
-import {scroller } from 'react-scroll'
-import DownArrow from '../../shared/images/down-arrow-light-grey.svg'
+import Arrow from '../../shared/images/arrow-icon.svg'
+import scrollToRefObject from '../../shared/helpers/scroll-to-ref'
 import './landing.scss'
 
-/**
- * This is the main content container for home page.
- */
-
  const Landing = ({bioRef}) => {
-
-  // const scrollTo = (ref) => {
-  //   if (ref /* + other conditions */) {
-  //     ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  //   }
-  // }
-
-  const scrollToRefObject = (ref) => window.scrollTo({
-    top: ref.current.offsetTop - 50,
-    behavior: "smooth"
-  }) 
 
    return (
      <section className='section-container bg-slate-grey' >
@@ -29,15 +14,11 @@ import './landing.scss'
             </div>
             <h2>Software Developer, Mentor & Creative Mind</h2>
           </div>
-          <div
-           className='arrow-container'
-           onClick={() => {
-             console.log('here')
-             scrollToRefObject(bioRef)
-           }}
-           >
+          <div className='arrow-container' onClick={() => {scrollToRefObject(bioRef)}}>
             <p className='text-container'>View my work</p>
-            <img className='bounce' src={DownArrow}/>
+            <div className='arrow-icon-container'>
+              <img className='arrow-icon' src={Arrow}/>
+            </div>
           </div>
        </div>
      </section>  

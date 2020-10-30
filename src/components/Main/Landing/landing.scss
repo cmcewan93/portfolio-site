@@ -35,19 +35,36 @@
 }
 
 .arrow-container {
-  position: absolute;
-  bottom: 50px;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   cursor: pointer;
-  img {
-    width: 40px;
-  }
+  border: 1px solid $off-white;
+  padding: 0px 10px;
+  width: 150px;
+  top: 60px;
+  transition: all 0.3s ease-in-out;
   .text-container {
     font-size: 16px;
     letter-spacing: 1px;
-    color: $grey-b3;
-    @extend .light-emphasis-font;
+    color: $off-white;
+    @extend .medium-emphasis-font;
+  }
+  .arrow-icon-container {
+    padding: 20px;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    img {
+      width: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &:hover {
+    border: 1px solid $light-slate-grey;
+    background-color: $light-slate-grey;
+    img {
+      transform: rotateZ(90deg);
+    }
   }
 }

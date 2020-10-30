@@ -75,7 +75,7 @@ const Skills = () => {
   }
   const renderGridColumn = (columnObj) => {
     return (
-      <div className='grid-column' data-aos="zoom-in-down">
+      <div className='grid-column' data-aos="fade-up">
         <div className='grid-column-header-container'>
           <img src={columnObj.logo}></img>
           <div className='grid-column-header'>
@@ -102,8 +102,8 @@ const Skills = () => {
   return (
     <section className='section-container bg-white'>
       <div className='content-container' id='skills-section'>
-        <h1 className='section-header'>Skills</h1>
-        <div className='divider-line' data-aos="fade-left"/>
+        <h1 className='section-header'> Skills</h1>
+        <div className='divider-line'/>
         {renderGrid(skillsObject)}
       </div>
     </section>
