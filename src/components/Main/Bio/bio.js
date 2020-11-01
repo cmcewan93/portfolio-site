@@ -22,7 +22,7 @@ const Bio = ({bioRef}) => {
             <p className='bio-description' >
               I'm a Toronto-based software developer with a passion for creating responsive, scalable and user-friendly applications. 
               After graduating from Seneca College in 2019 with a Diploma in Computer Programming, I went on to complete a 12-week, 
-              fully immersive Web Development bootcamp with Lighthouse Labs. I've since begun my first full-time position as a Full 
+              fully immersive Web Development bootcamp with Lighthouse Labs. I've since worked my first full-time position as a Full 
               Stack Developer at PlayLine, a local start-up in the online gaming industry. 
             </p>
             <p className='bio-description'>
@@ -32,7 +32,7 @@ const Bio = ({bioRef}) => {
             </p>
             <p className='bio-description'>
               When I'm not working on my latest project, I enjoy helping other new developers in my field, sharing my own experiences and advice. If you need advice on how to break into
-              the software development field, or would like to discuss an opportunity, feel free to reach out to me
+              the software development field, or would like to discuss an opportunity, feel free to reach out to me.
             </p>
           </div>
           <div className='divider-line'/>

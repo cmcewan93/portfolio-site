@@ -50,7 +50,13 @@ const Projects = ({projectsRef}) => {
   const hideModal = () => {setVisible(false)}
 
   useEffect(() => {
-    Aos.init({duration: 1500})
+    Aos.init({
+      duration: 1500,
+      disable: function() {
+        var maxWidth = 995;
+        return window.innerWidth < maxWidth;
+      }
+    })
   }, [])
 
   const selectProject = (project) => {
@@ -264,7 +270,7 @@ const Projects = ({projectsRef}) => {
 
   const renderColumn = (column, columnNum) => {
     return (
-      <div className='grid-column-projects'  data-aos="flip-left" data-aos-delay={`${columnNum * 200}`} >
+      <div className='grid-column-projects'  data-aos="zoom-in-up" data-aos-delay={`${columnNum * 200}`} >
         {
           column.map(row => {
             return renderGridItem(row, columnNum)

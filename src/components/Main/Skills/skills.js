@@ -29,7 +29,7 @@ const Skills = () => {
       ]
     },
     backEnd: {
-      title: 'Back End & Databases',
+      title: 'Back End',
       logo: BackEndLogo,
       skills:
       [

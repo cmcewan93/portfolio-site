@@ -23,7 +23,6 @@
     align-items: center;
 
     .form-top-container, .form-bottom-container {
-      input, textarea {}
       textarea:focus, input:focus {
         outline: none; 
         border: 2px solid $light-slate-grey;
@@ -99,6 +98,65 @@
         background: $light-slate-grey;
         color: $white;
       }
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  #contact-section {
+    margin-top: 0px;
+    .contact-message {
+      font-size: 28px;
+    }
+    .contact-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    form {
+      .form-top-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        .form-section {
+          width: 100%;
+          input {
+            height: 35px;
+            width: 93%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  #contact-section {
+    margin-top: 0px;
+    .contact-message {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .contact-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    form {
+     .form-header {
+       font-size: 16px;
+     }
+     .form-section {
+       input {
+         font-size: 12px;
+       }
+     }
+     .submit-button {
+       margin-top: 20px;
+     }
+     .form-bottom-container {
+       textarea {
+         font-size: 12px;
+       }
+     }
     }
   }
 }

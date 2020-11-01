@@ -9,6 +9,8 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .title-container {
   display: flex;
@@ -65,6 +67,17 @@
     background-color: $light-slate-grey;
     img {
       transform: rotateZ(90deg);
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .title-container {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 28px;
     }
   }
 }
