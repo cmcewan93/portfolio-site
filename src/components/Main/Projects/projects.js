@@ -16,6 +16,10 @@ import CodePinCreate from '../../shared/images/CodePin/create.png'
 import CodePinDemo from '../../shared/images/CodePin/demo.gif'
 import CodePinHome from '../../shared/images/CodePin/home.png'
 
+import PortfolioLanding from '../../shared/images/Portfolio/landing.png'
+import PortfolioGif from '../../shared/images/Portfolio/portfolio-gif.gif'
+import PortfolioSubmission from '../../shared/images/Portfolio/message-submission.png'
+
 import PlayLineLanding from '../../shared/images/Playline/playline-landing.png'
 import PlayLineEntry from '../../shared/images/Playline/contest-entry.png'
 import PlayLineCustom from '../../shared/images/Playline/custom.gif'
@@ -70,32 +74,25 @@ const Projects = ({projectsRef}) => {
       name: 'Portfolio Site',
       subtext: 'Colin McEwan\'\s personal portfolio site.',
       description: 
-      `A portfolio site showcasing projects that I have created or collborated on and providing insight into who I am. Powered by ReactJS and styled using SCSS, the site was
-      designed/developed without any CSS frameworks as a design exercise. It is entirely responsive and Cross-browser compatible to ensure accessibillity to a large variety of users.
-      The majority of icons and images were created using Adobe Illustrator and Photoshop.`,
+      `A portfolio site showcasing projects that I have created or collborated on and providing insight into who I am. Powered by ReactJS, styled using SCSS and hosted on netlify.
+      It is entirely responsive and Cross-browser compatible to ensure accessibillity to a large variety of users.
+      AOS animation library was used for the on-scroll effects, Email JS for email integration and react-image-gallery for the image slideshow.
+      The majority of icons and images were created/edited using Adobe Illustrator and Photoshop.`,
       url: 'https://github.com/cmcewan93/portfolio-site',
       stack: 'ReactJS',
       logo: PorfolioPic,
       images: [
         {
-          original: PlayLineLanding,
-          thumbnail: PlayLineLanding
+          original: PortfolioLanding,
+          thumbnail: PortfolioLanding
         },
         {
-          original: PlayLineLobby,
-          thumbnail: PlayLineLobby
-        },
+          original: PortfolioSubmission,
+          thumbnail: PortfolioSubmission
+        },   
         {
-          original: PlayLineCustom,
-          thumbnail: PlayLineCustom
-        },
-        {
-          original: PlayLineLive,
-          thumbnail: PlayLineLive
-        },
-        {
-          original: PlayLineEntry,
-          thumbnail: PlayLineEntry
+          original: PortfolioGif,
+          thumbnail: PortfolioGif
         }
       ]
     },
@@ -134,9 +131,11 @@ const Projects = ({projectsRef}) => {
     },
     {
       id: 3,
-      name: 'PlayLine Features',
-      subtext: '',
-      description: ``,
+      name: 'PlayLine',
+      subtext: 'Sports Lottery & Online Sports Casino',
+      description: `Built out a registration flow designed to retain new users by educating them on how to create a new PlayLine contest. Implemented the design of multiple new features including 
+      custom PlayLine contests, spin rewards wheel and contest entry/live contest sidebar. Completed a complete UI overhaul of the entire site including the lobby, live games and upcoming games all of
+      which are fully responsive and supported across all browsers.`,
       stack: 'ReactJS, PHP/Symfony & PostgreSQL',
       url: 'https://playline.com/',
       logo: PlaylinePic,
@@ -228,7 +227,8 @@ const Projects = ({projectsRef}) => {
       id: 6,
       name: 'Tweeter',
       subtext: 'Single-page Twitter clone',
-      description: '',
+      description: `Twitter clone built as an exercise to practice HTML, CSS jQuery and AJAX front-end skills. Express and MongoDB are used on the backend to manage tweets that are submitted 
+      and the various registered users. Asynchronous calls are made to the back end to update the Tweeter page in real time.`,
       stack: 'JQuery & Javascript',
       url: 'https://github.com/cmcewan93/tweeter',
       logo: TweeterLogo,
@@ -307,7 +307,7 @@ const Projects = ({projectsRef}) => {
   return (
     <section className='section-container bg-light-slate-grey'>
       <div className='content-container bg-light-slate-grey' id='projects-section'>
-        <h1 className='section-header'>Things I've Worked On</h1>
+        <h1 className='section-header'>Projects I've contributed to</h1>
         {
           renderGrid(projects)
         }

@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
 import { ErrorMessage } from '@hookform/error-message';
 import emailjs, { init } from 'emailjs-com';
+import Aos from "aos"
 
 import ConfirmationModal from '../shared/Modals/confirmation-modal'
 
@@ -17,6 +18,16 @@ const Contact = ({history}) => {
 
   const [visible, setVisible] = useState(false)
   const [isSuccessfulSubmit, setIsSuccessfulSubmit] = useState(false);
+  
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      disable: function() {
+        var maxWidth = 995;
+        return window.innerWidth < maxWidth;
+      }
+    })
+  }, [])
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -48,7 +59,7 @@ const Contact = ({history}) => {
 
   return (
     <section className='section-container bg-white'>
-      <div className='content-container bg-white' id='contact-section'>
+      <div className='content-container bg-white' id='contact-section' data-aos="fade-up">
         <div className='contact-container'>
           <div className='contact-message'> Thanks for taking the time to reach out. <br/> How can I help you today?</div>
           <form onSubmit={handleSubmit(onSubmit)}>

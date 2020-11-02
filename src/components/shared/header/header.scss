@@ -26,6 +26,7 @@
 }
 
 .header-left {
+  margin-top: 14px;
   .header-logo-icon {
     width: 40px;
     height: 40px;
@@ -51,4 +52,34 @@
     }
   }
   @extend .medium-emphasis-font
+}
+.mobile-nav-container {
+  display: none;
+}
+.web-nav-container {
+  display: flex
+}
+
+@media (max-width: 600px) {
+  .mobile-nav-container {
+    display: flex;
+    .dropdown-container {
+      width: 100%;
+      height: max-content;
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      background-color: $light-slate-grey;
+      .navbar-link-container {
+        margin: 20px;
+        font-size: 18px;
+      }
+    }
+    img {
+      width: 30px;
+    }
+  }
+  .web-nav-container {
+    display: none;
+  }
 }
