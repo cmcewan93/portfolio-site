@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import ProjectGallery from '../../Main/Projects/project-gallery'
+import ProjectGallery from '../../main/Projects/project-gallery'
 import Rodal from 'rodal'
 
 

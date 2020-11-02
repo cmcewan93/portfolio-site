@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import ProjectModal from '../../shared/Modals/project-modal'
+import ProjectModal from '../../shared/modals/project-modal'
 import Aos from "aos"
 
 import PlaylinePic from '../../shared/images/Playline/playline-logo1.svg'

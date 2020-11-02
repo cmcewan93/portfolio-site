@@ -5,7 +5,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import emailjs, { init } from 'emailjs-com';
 import Aos from "aos"
 
-import ConfirmationModal from '../shared/Modals/confirmation-modal'
+import ConfirmationModal from '../shared/modals/confirmation-modal'
 
 import './contact.scss'
 
