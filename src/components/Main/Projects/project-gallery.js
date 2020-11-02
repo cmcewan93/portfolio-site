@@ -8,7 +8,6 @@ const ProjectGallery = ({images}) => {
       items={images}
       sizes="(max-width: 600px) 480px,800px"
       showPlayButton={false}
-      // thumbnailPosition={'left'}
       showFullscreenButton={false}
       showThumbnails={false}
     />

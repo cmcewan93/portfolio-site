@@ -1,9 +1,9 @@
 import React, {useRef} from 'react'
-import Landing from './Landing/landing'
-import Bio from './Bio/bio'
-import Skills from './Skills/skills'
-import Projects from './Projects/projects'
-import FollowUp from './Follow-up/follow-up'
+import Landing from './landing/landing'
+import Bio from './bio/bio'
+import Skills from './skills/skills'
+import Projects from './projects/projects'
+import FollowUp from './follow-up/follow-up'
 import './main.scss'
 
 /**
