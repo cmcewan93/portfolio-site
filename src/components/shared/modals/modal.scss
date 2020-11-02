@@ -1,0 +1,159 @@
+@import '../style-variables.scss';
+
+.rodal,
+.rodal-mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed !important;
+  // padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.rodal-dialog {
+  display: flex;
+  margin: auto;
+  height: auto !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative !important;
+  width: 32em;
+  max-width: 100%;
+}
+
+.project-modal {
+  .rodal-close {
+    position: absolute;
+      cursor: pointer;
+      right: 16px;
+      width: 20px;
+      height: 20px;
+      bottom: 16px;
+      top: unset;
+  }
+  .rodal-dialog {
+    background: $white;
+    padding: 0px;
+  }
+  .modal-text-container {
+    margin: 20px;
+    margin-top: 15px;
+    position: relative;
+    .modal-header {
+      h1 {
+        font-size: 22pt;
+        color: #444;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+      h2 {
+        color: #c0c0c0;
+        text-transform: uppercase;
+        font-size: 11pt;
+        margin: 0;
+      }
+      @extend .emphasis-font
+    }
+    .project-description-container {
+      width: 95%;
+      p {
+        font-size: 11pt;
+        line-height: 1.5;
+      }
+      @extend .medium-emphasis-font;
+    }
+  }
+  .divider-line {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .modal-footer {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    .project-button {
+      // color: #929292;
+      transition: all 0.3s ease-in-out;
+      background: #444;
+      color: $white;
+      border: 1px solid #444;
+      // border: 1px solid $grey-b3;
+      padding: 10px;
+      text-decoration: none;
+      @extend .medium-emphasis-font;
+      &:hover {
+        background: $white;
+        color: #444;
+        border: 1px solid #444;
+      }
+    }
+  }
+}
+.confirmation-modal {
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    .modal-title.failure {
+      color: #cc0000;
+      margin-top: 10px;
+      @extend .emphasis-font;
+    }
+    .modal-title.success {
+      color: #4daf4d;
+      margin-top: 10px;
+      @extend .emphasis-font;
+    }
+    .modal-text-container {
+      line-height: 20px;
+      margin-top: 20px;
+      color: $slate-grey;
+      @extend .medium-emphasis-font;
+    }
+    .links-container {
+      margin-top: 20px;
+      .social-icon {
+        width: 40px;
+        padding-right: 40px;
+      }
+      :last-child {
+       .social-icon {
+         padding-right: unset;
+       }
+      }
+    }
+  }
+}
