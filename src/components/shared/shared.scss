@@ -59,3 +59,11 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .site-container {
+    // overflow: scroll;
+    overflow-x: hidden;
+
+  }
+ }
+
