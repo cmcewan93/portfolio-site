@@ -44,7 +44,7 @@ import TweeterDemo from '../../shared/images/Tweeter/demo.gif'
 
 import './projects.scss'
 
-const Projects = ({projectsRef}) => {
+const Projects = () => {
 
   const [visible, setVisible] = useState(false)
   const [selectedProject, setSelectedProject] = useState({})
