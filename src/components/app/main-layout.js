@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom';
-import MainHeader from '../shared/Header/mainHeader'
+import MainHeader from '../shared/Header/mainheader'
 import Footer from '../shared/Footer/footer'
 import Main from '../Main/main'
 

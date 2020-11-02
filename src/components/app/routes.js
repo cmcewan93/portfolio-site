@@ -1,11 +1,8 @@
 import React from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom';
-import MainLayout from './MainLayout'
-import DefaultLayout from './DefaultLayout'
-import NotFound from '../shared/NotFound/NotFound'
-
-// import Main from '../Main/main'
-// import Contact from '../Contact/contact'
+import MainLayout from './main-layout'
+import DefaultLayout from './default-layout'
+import NotFound from '../shared/NotFound/not-found'
 
 const Routes = () => {
   return (
