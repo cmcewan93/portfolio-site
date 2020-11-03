@@ -7,7 +7,7 @@ import FollowUp from './follow-up/follow-up'
 import './main.scss'
 
 /**
- * This is the main content container for home page.
+ * This is the main content container for home page!.
  */
 
  const Main = () => {
