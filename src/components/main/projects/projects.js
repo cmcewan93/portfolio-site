@@ -10,7 +10,7 @@ import SchedulerPic from '../../shared/images/Scheduler/scheduler-logo.svg'
 import TweeterLogo from '../../shared/images/Tweeter/tweeter-logo.svg'
 
 import CodePinRegister from '../../shared/images/CodePin/register-pic.jpg'
-import CodePinWall from '../../shared/images/CodePin/codepin-resource-wall.jpg'
+import CodePinWall from '../../shared/images/CodePin/codepin-resource-wall.png'
 import CodePinLogin from '../../shared/images/CodePin/login.png'
 import CodePinCreate from '../../shared/images/CodePin/create.jpg'
 import CodePinDemo from '../../shared/images/CodePin/demo.gif'
