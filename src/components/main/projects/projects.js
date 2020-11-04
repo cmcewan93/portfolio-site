@@ -134,7 +134,7 @@ const Projects = () => {
       name: 'PlayLine',
       subtext: 'Sports Lottery & Online Sports Casino',
       description: `Built out a registration flow designed to retain new users by educating them on how to create a new PlayLine contest. Implemented the design of multiple new features including 
-      custom PlayLine contests, spin rewards wheel and contest entry/live contest sidebar. Completed a complete UI overhaul of the entire site including the lobby, live games and upcoming games all of
+      custom PlayLine contests, spin rewards wheel and contest entry/live contest sidebar. Completed a UI overhaul of the entire site including the lobby, live games and upcoming games all of
       which are fully responsive and supported across all browsers.`,
       stack: 'ReactJS, PHP/Symfony & PostgreSQL',
       url: 'https://playline.com/',
