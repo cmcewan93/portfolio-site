@@ -44,7 +44,7 @@ const Contact = ({history}) => {
     showModal()
   }
   const onSubmit = data => {
-    let variables = {message: data.message, to_name: 'Colin', from_name: data.name, reply_to: data.email};
+    let variables = {message: data.message, to_name: 'Colin', from_name: data.name, from_email: data.email};
     emailjs.send(serviceId, templateId, variables)
       .then(res => {
         showConfirmationMessage(true)
