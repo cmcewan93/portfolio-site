@@ -12,7 +12,8 @@ import './contact.scss'
 const Contact = ({history}) => {
   const { pathname } = useLocation();
   const { register, handleSubmit, setError, errors } = useForm();
-  const {REACT_APP_EMAIL_SERVICE_ID: serviceId, REACT_APP_EMAIL_TEMPLATE_ID: templateId, REACT_APP_EMAIL_USER_ID : userId} = process.env
+  const {REACT_APP_EMAIL_SERVICE_ID: serviceId, REACT_APP_EMAIL_TEMPLATE_ID: templateId, REACT_APP_EMAIL_USER_ID: userId} = process.env
+  console.log(serviceId, templateId, userId)
   const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   init(userId);
 
