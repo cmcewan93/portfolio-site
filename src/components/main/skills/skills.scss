@@ -22,7 +22,6 @@
 .grid-column {
   text-align: center;
   font-size: 20px;
-  // color: #878787;
   color: $light-slate-grey;
   width: 275px;
   &:last-child {
@@ -46,7 +45,6 @@
       font-size: 24px;
       margin-top: 30px;
       padding-bottom: 5px;
-      // color: $grey-72;
       color: $slate-grey;
       @extend .emphasis-font;
       width: max-content;

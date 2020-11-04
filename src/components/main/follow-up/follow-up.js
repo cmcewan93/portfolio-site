@@ -11,10 +11,6 @@ const FollowUp = () => {
   useEffect(() => {
     Aos.init({
       duration: 500,
-      // disable: function() {
-      //   var maxWidth = 995;
-      //   return window.innerWidth < maxWidth;
-      // }
     })
   }, [])
   return (
