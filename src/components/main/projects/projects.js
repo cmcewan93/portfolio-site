@@ -74,8 +74,8 @@ const Projects = () => {
       name: 'Portfolio Site',
       subtext: 'Colin McEwan\'\s personal portfolio site.',
       description: 
-      `A portfolio site showcasing projects that I have created or collborated on and providing insight into who I am. Powered by ReactJS, styled using SCSS and hosted on netlify.
-      It is entirely responsive and Cross-browser compatible to ensure accessibillity to a large variety of users.
+      `A portfolio site showcasing projects that I have created or collaborated on and providing insight into who I am. Powered by ReactJS, styled using SCSS and hosted on netlify.
+      It is entirely responsive and Cross-browser compatible to ensure accessibility to a large variety of users.
       AOS animation library was used for the on-scroll effects, Email JS for email integration and react-image-gallery for the image slideshow.
       The majority of icons and images were created/edited using Adobe Illustrator and Photoshop.`,
       url: 'https://github.com/cmcewan93/portfolio-site',
