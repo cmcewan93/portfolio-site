@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import NavBar from './navbar'
 import './header.scss'
-import HeaderIcon from '../../shared/images/CM-logo-white.svg'
+import HeaderIcon from '../../shared/images/cm-logo-white.svg'
 
 const DefaultHeader = () => {
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';  // Updated import
 import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history'
+import { createBrowserHistory } from 'history';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import App from './components/app/app';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceworker';
 
 // const history = createBrowserHistory();
 // // Initialize google analytics page view tracking
@@ -16,10 +16,12 @@ import * as serviceWorker from './serviceWorker';
 // const trackingId = "G-RFMVKW540Z"; 
 // ReactGA.initialize(trackingId);
 
-ReactDOM.render(
+// Create a root element and render the app using `createRoot`
+const root = ReactDOM.createRoot(document.getElementById('root')); // Create root element
+root.render(
   <Router>
     <App />
-  </Router>, document.getElementById('root')
+  </Router>
 );
 
 // If you want your app to work offline and load faster, you can change

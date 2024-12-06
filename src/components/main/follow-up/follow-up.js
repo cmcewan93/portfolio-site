@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Aos from "aos"
 import AirplaneIcon from '../../shared/images/social-icons/airplane.svg'
 import MessageIcon from '../../shared/images/social-icons/chat.svg'
-import MessageIconWhite from '../../shared/images/social-icons/chatWhite.svg'
+import MessageIconWhite from '../../shared/images/social-icons/chatwhite.svg'
 import './follow-up.scss'
 
 const FollowUp = () => {

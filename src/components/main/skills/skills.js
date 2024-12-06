@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import Aos from "aos"
-import FrontEndLogo from '../../shared/images/fEndlogo.svg'
-import ToolsLogo from '../../shared/images/toolsLogo.svg'
-import BackEndLogo from '../../shared/images/backEndLogo.svg'
+import FrontEndLogo from '../../shared/images/fendlogo.svg'
+import ToolsLogo from '../../shared/images/toolslogo.svg'
+import BackEndLogo from '../../shared/images/backendlogo.svg'
 import './skills.scss'
 
 const Skills = () => {
