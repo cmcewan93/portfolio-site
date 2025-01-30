@@ -17,7 +17,7 @@
     "react-hook-form": "^6.9.6",
     "react-image-gallery": "^1.0.8",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.1",
     "rodal": "^1.8.1",
     "sass": "^1.83.4"
@@ -43,5 +43,10 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0"
+  }
 }
