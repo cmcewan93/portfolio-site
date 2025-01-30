@@ -77,7 +77,7 @@ const Skills = () => {
     return (
       <div className='grid-column' data-aos="fade-up">
         <div className='grid-column-header-container'>
-          <img src={columnObj.logo}></img>
+          <img src={ columnObj.logo} alt='Logo' />
           <div className='grid-column-header'>
             {columnObj.title}
           </div>

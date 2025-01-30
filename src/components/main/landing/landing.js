@@ -17,7 +17,7 @@ import './landing.scss'
           <div className='arrow-container' onClick={() => {scrollToRefObject(bioRef)}}>
             <p className='text-container'>View my work</p>
             <div className='arrow-icon-container'>
-              <img className='arrow-icon' src={Arrow}/>
+              <img className='arrow-icon' src={Arrow} alt='arrow'/>
             </div>
           </div>
        </div>

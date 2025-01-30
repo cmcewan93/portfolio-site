@@ -11,7 +11,7 @@ const DefaultHeader = () => {
       <div className='center-content-container' id="header-inner-container">
         <div className='header-left'>
           <Link to='/'>
-            <img className='header-logo-icon' src={HeaderIcon} />
+            <img className='header-logo-icon' src={HeaderIcon} alt='Header Icon' />
           </Link>
         </div>
         <div className='header-right'>

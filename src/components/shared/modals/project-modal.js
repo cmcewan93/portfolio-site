@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import ProjectGallery from '../../main/projects/project-gallery'
 import Rodal from 'rodal'
 
@@ -15,26 +15,26 @@ const ProjectModal = ({hideModal, visible, project}) => {
       <Rodal
         className='project-modal'
         visible={visible} 
-        onClose={() => {hideModal()}} 
-        animation={'zoom'} 
-        duration={600} 
-        customStyles={styleObject}
+        onClose={() => { hideModal() }} 
+        animation={ 'zoom' } 
+        duration={ 600 } 
+        customStyles={ styleObject }
        >
         {project.images !== undefined ?<ProjectGallery images={project.images}/> : null}
         <div className='modal-text-container'>
           <div className='modal-header'>
-            <h1>{project.name}</h1>
-            <h2>{project.subtext}</h2>
+            <h1>{ project.name }</h1>
+            <h2>{ project.subtext }</h2>
           </div>
           <div className='divider-line'/>
           <div className='project-description-container'>
             <p>
-              {project.description}
+              { project.description }
             </p>
           </div>
         </div>
         <div className='modal-footer'>
-          <a className='project-button' href={project.url}>VIEW PROJECT</a>
+          <a className='project-button' href={ project.url }>VIEW PROJECT</a>
         </div>
       </Rodal>
   )

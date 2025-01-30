@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, { useEffect } from 'react'
 import LakePic from '../../shared/images/lakepic2.png'
 import Aos from "aos"
 import './bio.scss'
@@ -13,7 +13,7 @@ const Bio = ({bioRef}) => {
     <section className='section-container bg-off-white' ref={bioRef}>
       <div className='content-container' id='bio-section'>
         <div className='bio-image-container'>
-          <img className='bio-pic' src={LakePic} data-aos-easing="linear" data-aos-duration="500" data-aos="fade-right" />
+          <img className='bio-pic' src={LakePic} data-aos-easing="linear" data-aos-duration="500" data-aos="fade-right" alt='Lake'/>
         </div>
         <div className='bio-text-container'>
           <h1 className='bio-header' >ABOUT</h1>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Rodal from 'rodal'
 
 import GithubIcon from '../images/social-icons/github-icon.svg'
@@ -40,10 +40,10 @@ const ConfirmationModal = ({hideModal, visible, isSuccess}) => {
         </div>
         <div className='links-container'>  
           <a href="https://github.com/cmcewan93" >
-            <img className='social-icon' src={GithubIcon}/>
+            <img className='social-icon' src={GithubIcon} alt='Github Link'/>
           </a>
           <a href='https://www.linkedin.com/in/colin-mcewan-a8848453'>
-            <img className='social-icon' src={LinkedinIcon} />
+            <img className='social-icon' src={LinkedinIcon} alt='Linkedin Link'/>
           </a>
         </div>    
       </div>
