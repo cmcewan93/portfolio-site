@@ -36,28 +36,42 @@ import TweeterMain from '../../shared/images/tweeter/main.png'
 import TweeterDemo from '../../shared/images/tweeter/demo.gif'
 
 import CaseIqLogo from '../../shared/images/caseiq/caseiq.svg'
+import CaseIqLogo2 from '../../shared/images/caseiq/caseiq.jpg'
+import CaseIqMainPage from '../../shared/images/caseiq/caseiqmainpage.png'
+import CaseIqDashboard from '../../shared/images/caseiq/caseiqdashboard.png'
+import CaseIqGif from '../../shared/images/caseiq/caseiqgif.gif'
 
 import ButtonIncLogo from '../../shared/images/button/buttonlogo.svg'
+
+import CareerCompassLogo from '../../shared/images/careercompass/career-compass-logo.jpg'
 
 const projects = [
     {
         id: 1,
         name: 'Case IQ',
         subtext: 'Case Management Software',
-        description: `Twitter clone built as an exercise to practice HTML, CSS jQuery and AJAX front-end skills. Express and MongoDB are used on the backend to manage tweets that are submitted 
-        and the various registered users. Asynchronous calls are made to the back end to update the Tweeter page in real time.`,
-        stack: 'JQuery & Javascript',
-        url: 'https://github.com/cmcewan93/tweeter',
+        description: `Case IQ, formerly known as i-Sight, is a leading provider of investigative case management software designed to help organizations efficiently manage and 
+        resolve various workplace incidents. The platform is utilized across multiple departments, including ethics and compliance, human resources, fraud, and corporate security`,
+        stack: 'BackboneJS, NodeJS, PostgreSQL, ElasticSearch, Redis & RabbitMQ',
+        url: 'https://www.caseiq.com/',
         logo: CaseIqLogo,
         images: [
           {
-            original: CaseIqLogo,
-            thumbnail: CaseIqLogo
+            original: CaseIqLogo2,
+            thumbnail: CaseIqLogo2,
           },
           {
-            original: TweeterDemo,
-            thumbnail: TweeterDemo
-          }
+            original: CaseIqMainPage,
+            thumbnail: CaseIqMainPage,
+          },
+          {
+            original: CaseIqDashboard,
+            thumbnail: CaseIqDashboard,
+          },
+          {
+            original: CaseIqGif,
+            thumbnail: CaseIqGif,
+          },
         ]
     },
     {
@@ -70,7 +84,7 @@ const projects = [
         AOS animation library was used for the on-scroll effects, Email JS for email integration and react-image-gallery for the image slideshow.
         The majority of icons and images were created/edited using Adobe Illustrator and Photoshop.`,
         url: 'https://github.com/cmcewan93/portfolio-site',
-        stack: 'ReactJS',
+        stack: 'ReactJS, SCSS',
         logo: PorfolioPic,
         images: [
           {
@@ -117,56 +131,34 @@ const projects = [
         subtext: 'Digital solutions for sustainable government and climate action projects',
         description: `Twitter clone built as an exercise to practice HTML, CSS jQuery and AJAX front-end skills. Express and MongoDB are used on the backend to manage tweets that are submitted 
         and the various registered users. Asynchronous calls are made to the back end to update the Tweeter page in real time.`,
-        stack: 'JQuery & Javascript',
-        url: 'https://github.com/cmcewan93/tweeter',
+        stack: 'NextJS, NodeJS, ExpressJS & PostgreSQL',
+        url: 'https://www.button.is/',
         logo: ButtonIncLogo,
         images: [
           {
-            original: TweeterMain,
-            thumbnail: TweeterMain
+            original: ButtonIncLogo,
+            thumbnail: ButtonIncLogo,
           },
-          {
-            original: TweeterDemo,
-            thumbnail: TweeterDemo
-          }
         ]
     },
     {
-        id: 5,
-        name: 'Night Owl',
-        subtext: 'Nightlife Application',
-        description: `Provides real time, live updates on the current status of bars and nightclubs within a user's area. Performs data analytics from a pool of users to provide 
-        accurate live descriptions of different venues. User Registration and authenication using bcrypt to ensure user security. 
-        Google Maps API and Uber API are integrated to provide directions/transport to a selected location. `,
-        stack: 'ReactJS, ExpressJS & PostgreSQL',
-        url: 'https://github.com/cmcewan93/NightOwl-FrontEnd',
-        logo: NightOwlPic,
-        images: [
-          {
-            original: NightOwlLogin,
-            thumbnail: NightOwlLogin
-          },
-          {
-            original: NightOwlDemo,
-            thumbnil: NightOwlDemo
-          },
-          {
-            original: NightOwlMapview,
-            thumbnail: NightOwlMapview
-          },
-          {
-            original: NightOwlBarview,
-            thumbnail: NightOwlBarview
-          },
-          {
-            original: NightOwlCheckIn,
-            thumbnail: NightOwlCheckIn
-          },
-          {
-            original: NightOwlUberview,
-            thumbnail: NightOwlUberview
-          },
-        ]
+      id: 5,
+      name: 'CareerCompass',
+      subtext: 'Ai Powered Job Search Tool (WIP)',
+      description: 'CareerCompass is an AI-powered job search tool designed to streamline your job search process. It helps job seekers track and manage their applications while highlighting key areas of overlap between a candidate\'s experience and job descriptions, ensuring a more tailored approach to each opportunity.',
+      stack: 'ReactJS, TypeScript, MySQL, AWS & Docker',
+      url: 'https://github.com/cmcewan93',
+      logo: CareerCompassLogo,
+      images: [
+        {
+          original: CareerCompassLogo,
+          thumbnail: CareerCompassLogo
+        },
+        {
+          original: CareerCompassLogo,
+          thumbnail: CareerCompassLogo
+        }
+      ]
     },
     {
         id: 6,
@@ -222,7 +214,44 @@ const projects = [
         ]
     },
     {
-        id: 8,
+      id: 8,
+      name: 'Night Owl',
+      subtext: 'Nightlife Application',
+      description: `Provides real time, live updates on the current status of bars and nightclubs within a user's area. Performs data analytics from a pool of users to provide 
+      accurate live descriptions of different venues. User Registration and authenication using bcrypt to ensure user security. 
+      Google Maps API and Uber API are integrated to provide directions/transport to a selected location. `,
+      stack: 'ReactJS, ExpressJS & PostgreSQL',
+      url: 'https://github.com/cmcewan93/NightOwl-FrontEnd',
+      logo: NightOwlPic,
+      images: [
+        {
+          original: NightOwlLogin,
+          thumbnail: NightOwlLogin
+        },
+        {
+          original: NightOwlDemo,
+          thumbnil: NightOwlDemo
+        },
+        {
+          original: NightOwlMapview,
+          thumbnail: NightOwlMapview
+        },
+        {
+          original: NightOwlBarview,
+          thumbnail: NightOwlBarview
+        },
+        {
+          original: NightOwlCheckIn,
+          thumbnail: NightOwlCheckIn
+        },
+        {
+          original: NightOwlUberview,
+          thumbnail: NightOwlUberview
+        },
+      ]
+    },
+    {
+        id: 9,
         name: 'CodePin',
         subtext: 'Educational resource management system',
         stack: 'Jquery, ExpressJS & PostgreSQL',
@@ -254,26 +283,6 @@ const projects = [
           },
         ]
     },
-    {
-        id: 9,
-        name: 'TBD',
-        subtext: 'Digital solutions for sustainable government and climate action projects',
-        description: `Twitter clone built as an exercise to practice HTML, CSS jQuery and AJAX front-end skills. Express and MongoDB are used on the backend to manage tweets that are submitted 
-        and the various registered users. Asynchronous calls are made to the back end to update the Tweeter page in real time.`,
-        stack: 'JQuery & Javascript',
-        url: 'https://github.com/cmcewan93/tweeter',
-        logo: ButtonIncLogo,
-        images: [
-          {
-            original: TweeterMain,
-            thumbnail: TweeterMain
-          },
-          {
-            original: TweeterDemo,
-            thumbnail: TweeterDemo
-          }
-        ]
-      },
   ]
 
 export default projects;
