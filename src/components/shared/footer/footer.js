@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className='info-container'>
           <div className='author-container'> Designed & created with <div><img src={CoffeeIcon} alt='Cofee Icon'/> </div> by Colin McEwan </div>
-          <div className='copyright-container'>&#169; 2020  All rights reserved. </div>
+          <div className='copyright-container'>&#169; 2025  All rights reserved. </div>
         </div>
       </div>
     </footer>
