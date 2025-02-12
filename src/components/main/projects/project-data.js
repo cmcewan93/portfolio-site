@@ -42,6 +42,7 @@ import CaseIqDashboard from '../../shared/images/caseiq/caseiqdashboard.png'
 import CaseIqGif from '../../shared/images/caseiq/caseiqgif.gif'
 
 import ButtonIncLogo from '../../shared/images/button/buttonlogo.svg'
+import ButtonIncLogo2 from '../../shared/images/button/resized_buttonlogo.svg'
 
 import CareerCompassLogo from '../../shared/images/careercompass/career-compass-logo.jpg'
 
@@ -50,9 +51,9 @@ const projects = [
         id: 1,
         name: 'Case IQ',
         subtext: 'Case Management Software',
-        description: `Case IQ, formerly known as i-Sight, is a leading provider of investigative case management software designed to help organizations efficiently manage and 
-        resolve various workplace incidents. The platform is utilized across multiple departments, including ethics and compliance, human resources, fraud, and corporate security`,
-        stack: 'BackboneJS, NodeJS, PostgreSQL, ElasticSearch, Redis & RabbitMQ',
+        description: `Case IQ, formerly i-Sight, is a leading provider of investigative case management software that helps organizations efficiently manage and resolve workplace incidents.
+        As a member of the Platform Team, I contributed to implementing several full-stack features, including a customizable data grid that enabled users to filter and sort data across multiple entities. 
+        I also led the development of a feature that optimized the deployment process by 25%, eliminating the need for developer intervention when enabling the Portal and Hotline features, streamlining operations and enhancing efficiency.`,
         url: 'https://www.caseiq.com/',
         logo: CaseIqLogo,
         images: [
@@ -129,15 +130,15 @@ const projects = [
         id: 4,
         name: 'Button Inc',
         subtext: 'Digital solutions for sustainable government and climate action projects',
-        description: `Twitter clone built as an exercise to practice HTML, CSS jQuery and AJAX front-end skills. Express and MongoDB are used on the backend to manage tweets that are submitted 
-        and the various registered users. Asynchronous calls are made to the back end to update the Tweeter page in real time.`,
+        description: `I consulted on the StrongerBC and Online Shop Form projects, helping BC business owners access COVID relief grants. My work included developing an automated email service to streamline user notifications about application status updates, enhancing communication efficiency. Additionally, 
+        I designed and implemented front-end React components with robust field validation and smooth submission handling, ensuring a seamless user experience.`,
         stack: 'NextJS, NodeJS, ExpressJS & PostgreSQL',
         url: 'https://www.button.is/',
         logo: ButtonIncLogo,
         images: [
           {
-            original: ButtonIncLogo,
-            thumbnail: ButtonIncLogo,
+            original: ButtonIncLogo2,
+            thumbnail: ButtonIncLogo2,
           },
         ]
     },
@@ -154,10 +155,6 @@ const projects = [
           original: CareerCompassLogo,
           thumbnail: CareerCompassLogo
         },
-        {
-          original: CareerCompassLogo,
-          thumbnail: CareerCompassLogo
-        }
       ]
     },
     {

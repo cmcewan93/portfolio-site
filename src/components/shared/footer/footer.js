@@ -15,7 +15,7 @@ const Footer = () => {
           <a href="https://github.com/cmcewan93" >
             <img className='social-icon' src={GithubIcon} alt='Github Ixon'/>
           </a>
-          <a href='https://www.linkedin.com/in/colin-mcewan-a8848453'>
+          <a href='https://www.linkedin.com/in/colin-mcewan-dev'>
             <img className='social-icon' src={LinkedinIcon} alt='Linkedin Icon'/>
           </a>
           <a href="mailto:developer@colinmcewan.ca">

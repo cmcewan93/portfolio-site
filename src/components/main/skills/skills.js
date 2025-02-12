@@ -18,12 +18,13 @@ const Skills = () => {
       skills:
       [
         {name: 'React/Redux', icon:''},
-        {name: 'JavaScript (ES6+)', icon: ''},
+        {name: 'Next', icon:''},
+        {name: 'Backbone', icon: ''},
         {name: 'HTML', icon: ''},
         {name: 'CSS3', icon: ''},
         {name: 'SCSS', icon: ''},
         {name: 'Jquery', icon: ''},
-        {name: 'Ajax', icon: ''},
+        {name: 'Ajax & Axios', icon: ''},
         {name: 'Bootstrap', icon: ''},
         {name: 'Responsive Design', icon: ''}
       ]
@@ -34,13 +35,15 @@ const Skills = () => {
       skills:
       [
         {name: 'Node JS', icon: ''},
+        {name: 'JavaScript (ES6+)', icon: ''},
+        {name: 'TypeScript', icon: ''},
         {name: 'Express JS', icon: ''},
         {name: 'PostgreSQL', icon: ''},
         {name: 'MongoDB', icon: ''},
-        {name: 'Microservices'},
-        {name: 'REST APIs'},
-        {name: 'UML', icon: ''},
-        {name: 'OOP', icon: ''}
+        {name: 'MySQL', icon: ''},
+        {name: 'Microservices Architecture'},
+        {name: 'RESTful APIs'},
+        {name: 'Postman', icon: ''}
       ],
     },
     tools: {
@@ -48,15 +51,16 @@ const Skills = () => {
       logo: ToolsLogo,
       skills:
       [
-        {name: 'Git', icon: ''},
-        {name: 'Unix/Linux Systems', icon: ''},
         {name: 'Docker', icon: ''},
+        {name: 'Redis', icon: ''},
+        {name: 'ElasticSearch', icon: ''},
+        {name: 'RabbitMQ', icon: ''},
         {name: 'AWS', icon: ''},
+        {name: 'Azure Insights', icon: ''},
+        {name: 'Mocha', icon: ''},
         {name: 'Github', icon: ''},
+        {name: 'Git', icon: ''},
         {name: 'Jira', icon: ''},
-        {name: 'NPM', icon: ''},
-        {name: 'Invision', icon: ''},
-        {name: 'Adobe Illustrator', icon: ''}
       ]
     }
   }
