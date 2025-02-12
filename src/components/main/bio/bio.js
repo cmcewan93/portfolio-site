@@ -23,7 +23,7 @@ const Bio = ({bioRef}) => {
               I'm a Toronto-based software developer with five years of experience building responsive, scalable, and user-friendly applications. 
               I started my career as a Full Stack Developer at PlayLine, a local start-up in the online gaming industry, before consulting at Button Inc, 
               where I contributed to government-funded web applications. I then joined Case IQ's Platform Team, where I worked on improving the core architecture, 
-              enhancing user configurability, and optimizing system performance to support a scalable and flexible SaaS platform.
+              enhancing user configurability, and optimizing system performance to support a scalable and flexible SaaS product.
             </p>
             <p className='bio-description'>
               I've always enjoyed building things and the problem-solving that comes with it. Whether working on my own or collaborating with others, 
