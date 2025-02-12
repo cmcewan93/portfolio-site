@@ -55,6 +55,7 @@ const projects = [
         As a member of the Platform Team, I contributed to implementing several full-stack features, including a customizable data grid that enabled users to filter and sort data across multiple entities. 
         I also led the development of a feature that optimized the deployment process by 25%, eliminating the need for developer intervention when enabling the Portal and Hotline features, streamlining operations and enhancing efficiency.`,
         url: 'https://www.caseiq.com/',
+        stack: 'BackboneJS, ExpressJS, PostgreSQL, ElasticSearch, Redis, RabbitMQ, AWS',
         logo: CaseIqLogo,
         images: [
           {

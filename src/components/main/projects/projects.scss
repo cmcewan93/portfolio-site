@@ -92,6 +92,8 @@
 }
 
 .grid-image {
+  width: 100%;
+  object-fit: contain;
   height: 150px;
   max-width: 250px;
 }
