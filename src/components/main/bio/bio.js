@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, { useEffect } from 'react'
 import LakePic from '../../shared/images/lakepic2.png'
 import Aos from "aos"
 import './bio.scss'
@@ -13,17 +13,17 @@ const Bio = ({bioRef}) => {
     <section className='section-container bg-off-white' ref={bioRef}>
       <div className='content-container' id='bio-section'>
         <div className='bio-image-container'>
-          <img className='bio-pic' src={LakePic} data-aos-easing="linear" data-aos-duration="500" data-aos="fade-right" />
+          <img className='bio-pic' src={LakePic} data-aos-easing="linear" data-aos-duration="500" data-aos="fade-right" alt='Lake'/>
         </div>
         <div className='bio-text-container'>
           <h1 className='bio-header' >ABOUT</h1>
           <div className='divider-line' />
           <div className='text-container'  data-aos-easing="linear" data-aos-duration="500" data-aos="fade-right">
             <p className='bio-description' >
-              I'm a Toronto-based software developer with a passion for creating responsive, scalable and user-friendly applications. 
-              After graduating from Seneca College in 2019 with a Diploma in Computer Programming, I went on to complete a 12-week, 
-              fully immersive Web Development bootcamp with Lighthouse Labs. I've since completed my first full-time position as a Full 
-              Stack Developer at PlayLine, a local start-up in the online gaming industry. 
+              I'm a Toronto-based software developer with five years of experience building responsive, scalable, and user-friendly applications. 
+              I started my career as a Full Stack Developer at PlayLine, a local start-up in the online gaming industry, before consulting at Button Inc, 
+              where I contributed to government-funded web applications. I then joined Case IQ's Platform Team, where I worked on improving the core architecture, 
+              enhancing user configurability, and optimizing system performance to support a scalable and flexible SaaS platform.
             </p>
             <p className='bio-description'>
               I've always enjoyed building things and the problem-solving that comes with it. Whether working on my own or collaborating with others, 

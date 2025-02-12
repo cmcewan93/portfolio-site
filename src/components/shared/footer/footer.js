@@ -13,18 +13,18 @@ const Footer = () => {
         <div className='footer-quote'></div>
         <div className='social-contacts-container'>
           <a href="https://github.com/cmcewan93" >
-            <img className='social-icon' src={GithubIcon}/>
+            <img className='social-icon' src={GithubIcon} alt='Github Ixon'/>
           </a>
-          <a href='https://www.linkedin.com/in/colin-mcewan-a8848453'>
-            <img className='social-icon' src={LinkedinIcon} />
+          <a href='https://www.linkedin.com/in/colin-mcewan-dev'>
+            <img className='social-icon' src={LinkedinIcon} alt='Linkedin Icon'/>
           </a>
           <a href="mailto:developer@colinmcewan.ca">
-            <img className='social-icon' src={EmailIcon} />
+            <img className='social-icon' src={EmailIcon} alt='Email Icon'/>
           </a>
         </div>
         <div className='info-container'>
-          <div className='author-container'> Designed & created with <div><img src={CoffeeIcon}/> </div> by Colin McEwan </div>
-          <div className='copyright-container'>&#169; 2020  All rights reserved. </div>
+          <div className='author-container'> Designed & created with <div><img src={CoffeeIcon} alt='Cofee Icon'/> </div> by Colin McEwan </div>
+          <div className='copyright-container'>&#169; 2025  All rights reserved. </div>
         </div>
       </div>
     </footer>

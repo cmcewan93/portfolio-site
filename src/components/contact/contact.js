@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
 import { ErrorMessage } from '@hookform/error-message';
-import emailjs, { init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import Aos from "aos"
 
 import ConfirmationModal from '../shared/modals/confirmation-modal'
@@ -11,10 +11,16 @@ import './contact.scss'
 
 const Contact = ({history}) => {
   const { pathname } = useLocation();
-  const { register, handleSubmit, setError, errors } = useForm();
-  const {REACT_APP_EMAIL_SERVICE_ID: serviceId, REACT_APP_EMAIL_TEMPLATE_ID: templateId, REACT_APP_EMAIL_USER_ID: userId} = process.env
-  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  init(userId);
+  const { register, handleSubmit, errors } = useForm();
+  const { 
+    REACT_APP_EMAIL_SERVICE_ID: serviceID, 
+    REACT_APP_EMAIL_TEMPLATE_ID: templateID, 
+    REACT_APP_EMAIL_PUBLIC_KEY: publicKey,
+  } = process.env;
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  emailjs.init(publicKey);
 
   const [visible, setVisible] = useState(false)
   const [isSuccessfulSubmit, setIsSuccessfulSubmit] = useState(false);
@@ -43,9 +49,15 @@ const Contact = ({history}) => {
     setIsSuccessfulSubmit(isSuccess);
     showModal()
   }
-  const onSubmit = data => {
-    let variables = {message: data.message, to_name: 'Colin', from_name: data.name, from_email: data.email};
-    emailjs.send(serviceId, templateId, variables)
+  const onSubmit = (data) => {
+    const templateParams = {
+      message: data.message,
+      to_name: 'Colin McEwan',
+      from_name: data.name,
+      from_email: data.email
+    };
+
+    emailjs.send(serviceID, templateID, templateParams)
       .then(res => {
         showConfirmationMessage(true)
         console.log('Email successfully sent!')

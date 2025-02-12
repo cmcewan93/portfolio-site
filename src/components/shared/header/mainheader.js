@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useRef} from 'react'
-import { useHistory } from "react-router-dom";
 import {Link} from 'react-router-dom';
 import NavBar from './navbar'
 import './header.scss'
@@ -27,7 +26,7 @@ const MainHeader = () => {
       <div className='center-content-container' id="header-inner-container">
         <div className='header-left'>
           <Link to='/'>
-            <img className='header-logo-icon' src={HeaderIcon} />
+            <img className='header-logo-icon' src={HeaderIcon} alt='Header'/>
           </Link>
         </div>
         <div className='header-right'>

@@ -17,7 +17,7 @@ const FollowUp = () => {
     <section className='section-container bg-white'>
        <div className='content-container' id='followup-section'>
           <div className='follow-up-inner-container'>
-            <img className='paper-airplane' src={AirplaneIcon} />
+            <img className='paper-airplane' src={AirplaneIcon} alt='Paper Airplane'/>
             <h1>Looking to collaborate ?</h1>
             <div className='follow-up-text'>
               Whether you have an exciting employment opportunity, project or just want to say hi, send me a message!
@@ -25,10 +25,10 @@ const FollowUp = () => {
             <Link 
               className='message-button-container'
               to='/contact'
-             >
+            >
               <div className='message-button' onMouseEnter={() => {setMsgButtonHovered(true)}} onMouseLeave={() => {setMsgButtonHovered(false)}} data-aos="zoom-in">
                 <div> Message me</div>
-                <img className='message-icon' src={msgButtonHovered ? MessageIconWhite : MessageIcon} />
+                <img className='message-icon' src={msgButtonHovered ? MessageIconWhite : MessageIcon} alt='Message'/>
               </div>
             </Link>
           </div>

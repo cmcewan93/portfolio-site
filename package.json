@@ -9,7 +9,7 @@
     "config": "^3.3.2",
     "cra-template": "1.0.3",
     "dotenv": "^8.2.0",
-    "emailjs-com": "^2.6.3",
+    "emailjs-com": "^3.2.0",
     "history": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -19,7 +19,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
-    "rodal": "^1.8.1"
+    "rodal": "^1.8.1",
+    "sass": "^1.83.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,7 +44,9 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.3"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0"
   }
 }

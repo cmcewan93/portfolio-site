@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';  // Updated import
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './components/app/app';
 import * as serviceWorker from './serviceworker';
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Switch, Redirect} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import MainLayout from './main-layout'
 import DefaultLayout from './default-layout'
 import NotFound from '../shared/not-found/not-found'
